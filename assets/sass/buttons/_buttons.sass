@@ -1,0 +1,64 @@
+@mixin button-bg($bg) 
+  background: $red
+  border: 1px solid $red
+  &:hover 
+    background: darken($bg, 8%)
+    border: 1px solid darken($bg, 8%)
+    transition: all 0.3s ease
+  
+  &:active 
+    background: darken($bg, 25%)
+    
+//btn-outline-blue
+@mixin button-outline($bg-transparent) 
+  background: transparent
+  border: 1px solid $bg-transparent
+  color: $bg-transparent
+  &:hover 
+    background: darken($bg-transparent, 8%)
+    border: 1px solid darken($bg-transparent, 8%)
+    transition: all 0.3s ease
+    color: $white
+  
+  &:active 
+    background: darken($bg-transparent, 25%)
+
+//btn-outline-white
+@mixin button-outline-white($bg-transparent-white) 
+  background: transparent
+  border: 1px solid $bg-transparent-white
+  color: $bg-transparent-white
+  &:hover 
+    background: darken($bg-transparent-white, 8%)
+    border: 1px solid darken($bg-transparent-white, 8%)
+    transition: all 0.3s ease
+    color: $blue
+  
+  &:active 
+    background: darken($bg-transparent-white, 25%)
+
+.btn
+ display: inline-block
+ color: $white
+ font-family: $sans-font-family
+ text-decoration: none
+ padding: .25em 2.5em
+ font-size: 1.25rem
+ cursor: pointer
+ @media screen and (max-width: 767px)
+  display: block
+  font-size: 1rem
+  padding: 1.25em .5em
+
+.btn-sm
+  padding: .25em .5em
+  // font-size: 1.15rem
+
+.btn-red 
+   @include button-bg($red)
+
+.btn-outline-blue
+   @include button-outline($blue)
+
+.btn-outline-white
+   @include button-outline-white($white)

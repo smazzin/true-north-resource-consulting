@@ -1,0 +1,12 @@
+{{ if .IsHome }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+{{ end }}
+
+{{- $styles := resources.Get "sass/site.sass" | toCSS | postCSS (dict "config" "postcss.config.js") -}}
+{{- if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{ else }}
+{{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ end -}}   

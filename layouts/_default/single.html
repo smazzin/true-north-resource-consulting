@@ -1,0 +1,14 @@
+{{ define "main" }}
+    {{ partial "hero" (dict "imageUrl" .Params.image "title" .Params.herotitle "text" .Params.herotext "buttonText" $.Site.Data.contact.buttonblurb "contactUrl" $.Site.Data.contact.contactUrl) }}
+    <section>
+        <div class="container">
+            <div class="grid grid--container">
+                <div class="row">
+                    <div class="col col--sm-9">
+                        {{ .Content  | safeHTML }}
+                    </div>
+                </div>
+            </div>
+        </div>\
+    </section>
+{{ end }}

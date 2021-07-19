@@ -1,0 +1,60 @@
+.container-fluid
+  width: $container-fluid
+  padding-right: 0.9375em
+  padding-left: 0.9375em
+  margin: 0 auto
+
+.container
+  max-width: $container
+  padding-right: 0.9375em
+  padding-left: 0.9375em
+  margin: 0 auto
+
+.container-sm
+  max-width: $container-sm
+  padding-right: 0.9375em
+  padding-left: 0.9375em
+  margin: 0 auto
+
+.container-xs
+  max-width: $container-xs
+  padding-right: 0.9375em
+  padding-left: 0.9375em
+  margin: 0 auto
+
+// CSS Grid used to calculate automatically how many columns should fit into area
+.grid
+  // Grid Fallback
+  display: flex
+  flex-wrap: wrap
+  // Supports Grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr))
+  grid-gap: 0.5rem
+  grid-auto-rows: 1fr
+  justify-items: center
+
+
+.grid-2
+  // Grid Fallback
+  display: flex
+  flex-wrap: wrap
+  // Supports Grid
+  display: grid
+  @media (min-width: 900px)
+    grid-template-columns: repeat(2, 1fr)
+  grid-gap: 2rem
+  row-gap: 2em
+  grid-row-gap: 2em
+
+.grid-3
+  // Grid Fallback
+  display: flex
+  flex-wrap: wrap
+  // Supports Grid
+  display: grid
+  @media (min-width: 900px)
+    grid-template-columns: repeat(3, 1fr)
+  grid-gap: 2rem
+  row-gap: 2em
+  grid-row-gap: 2em

@@ -1,0 +1,103 @@
+* 
+    
+    color: $black
+    text-rendering: optimizeLegibility
+    font-family: $base-font-family
+    line-height: $base-line-height
+    // font-size: $base-font-size
+// https://css-tricks.com/snippets/css/fluid-typography/
+body
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)))
+
+body 
+  line-height: 1.2
+
+a 
+  font-family: $base-font-family
+  text-decoration: none
+  font-size: 1.25rem
+  color: $black
+
+h1, h2, h3, h4, h5, h6 
+    font-weight: $head-font-weight
+    color: $black
+    margin-bottom: .5rem
+    margin-top: 0
+
+h1 
+  color: $blue
+  font-size: 2.25rem
+  font-weight: 700
+  font-weight: bolder
+
+h2 
+  color: $blue
+  font-size: 2.25rem
+  font-weight: bolder
+
+h3 
+  font-size: 1.5rem
+
+h4 
+  font-size: 1.125rem
+
+h5 
+  font-size: 1rem
+
+h6 
+  font-size: 0.875rem
+
+p, strong 
+  font-family: $base-font-family
+  font-size: 1.25rem
+  font-weight: 300
+
+ul li 
+  font-family: $base-font-family
+  font-size: 1.25rem
+  font-weight: 300
+  //padding: 0 .5rem
+
+.list-unstyled
+  padding: 0
+  margin: 0
+  li
+    list-style: none
+
+.font-light 
+  font-weight: 300
+
+.font-regular 
+  font-weight: 300
+
+.text-bold 
+  font-weight: 400
+
+.title
+  font-weight: bold
+
+.uppercase
+  text-transform: uppercase
+
+//Text position
+
+.left 
+  text-align: left
+
+.right 
+  text-align: right
+
+.center 
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+
+.justify 
+    text-align: justify
+
+//Text color
+.text-blue
+  color: $blue
+
+.text-white
+  color: $white
