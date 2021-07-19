@@ -40,7 +40,7 @@
   }
   
   &-line {
-    background: $blue;
+    background: $green;
     height: 3px;
     position: absolute;
     left: 0;
@@ -48,7 +48,7 @@
     width: 100%;
     
     .hamburger:hover & {
-      background: $blue;
+      background: $green;
     }
     
     &-top {
@@ -115,7 +115,7 @@
   }
   
   .menu-item a {
-    color: $black;
+    color: $dark;
     font-size: 1rem;
     text-decoration: none;
     display: flex;
@@ -130,7 +130,7 @@
       height: 2px;
       left: 50%;
       position: absolute;
-      background: $blue;
+      background: $dark;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
@@ -152,7 +152,7 @@
 }
 
 .sub-nav {
-    border-top: 1px solid $blue;
+    border-top: 1px solid $dark;
     display: none;
     position: absolute;
     background-color: $white;
