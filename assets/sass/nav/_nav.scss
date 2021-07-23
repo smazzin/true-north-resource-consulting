@@ -3,12 +3,12 @@
 }
 
 .navbar-wrapper {
-  // background-color: $grey;
+  background: $dark;
 }
 
 .navbar {
   align-items: center;
-  // background: $grey;
+  // background: $dark;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,7 +40,7 @@
   }
   
   &-line {
-    background: $green;
+    background: $light-blue;
     height: 3px;
     position: absolute;
     left: 0;
@@ -48,7 +48,7 @@
     width: 100%;
     
     .hamburger:hover & {
-      background: $green;
+      background: $light-blue;
     }
     
     &-top {
@@ -115,7 +115,9 @@
   }
   
   .menu-item a {
-    color: $dark;
+    color: $light-blue;
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 1rem;
     text-decoration: none;
     display: flex;
@@ -130,7 +132,7 @@
       height: 2px;
       left: 50%;
       position: absolute;
-      background: $dark;
+      background: $light-blue;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
@@ -152,7 +154,7 @@
 }
 
 .sub-nav {
-    border-top: 1px solid $dark;
+    border-top: 1px solid $light-blue;
     display: none;
     position: absolute;
     background-color: $white;

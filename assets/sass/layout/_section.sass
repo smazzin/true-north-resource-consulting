@@ -4,17 +4,29 @@ img
     max-width: 100%
     height: auto
 
-.p-0
-    padding: 0
+.m-0
+    margin: 0
 
 .mt-0
     margin-top: 0
+
+.mb-0
+    margin-bottom: 0
 
 .mb-1
     margin-bottom: 1em
 
 .mb-2
     margin-bottom: 2em
+
+.ml-2
+    margin-left: 2em
+
+.my-2
+    margin: 2em 0
+
+.p-0
+    padding: 0
 
 .pb-2
     padding-bottom: 2em
@@ -50,13 +62,16 @@ img
 .phone
     @media screen and (max-width: 767px)
         display: none
+    p 
+        font-size: 1rem
+        color: $light-blue
+        // line-height: 0
 
 .phone-number
-    color: $white
+    color: $light-blue
 
 .card
     background: $white
-    // box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 10px 15px rgba(0, 0, 0, 0.1);
     border-radius: 4px
     height: 100%
     p 
@@ -84,11 +99,6 @@ img
     img 
         vertical-align: middle
 
-
-.border-bottom-red
-    border-bottom: 4px solid $green
-    padding-bottom: .25em
-
 .img-round
     border-radius: 50%
 
@@ -98,9 +108,6 @@ img
 .bg-light 
     background-color: $light-grey
 
-.about-wrap
-    display: flow-root
-
 .img-wrap
     width: 325px
     float: right 
@@ -109,4 +116,3 @@ img
         display: block
         width: 100%
         margin: 0 auto
-

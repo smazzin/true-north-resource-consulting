@@ -1,0 +1,17 @@
+{
+	"tophero": {
+		"title": "True North Natural Resource Consulting",
+		"alttitle": "Stump to Stump, we manage your forest resources.",
+		"button": "LEARN MORE",
+		"image": "/img/top-hero.jpg"
+	},
+	"OurMission": {
+		"title": "Our Mission",
+		"text": "We provide the best service and value to each of our clients, as well as being a steward of the land ensuring future generation timber and wood fiber by practicing sustainable and ecologically sound management practices.",
+		"image": "/img/green-trees.svg"
+	},
+	"WhatWeDo": {
+		"title": "What We Do",
+		"text": ""
+	}
+}

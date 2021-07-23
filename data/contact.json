@@ -1,0 +1,15 @@
+{
+    "email": "henneman.mike@gmail.com",
+    "phone": "(541) 761-1718",
+    "phoneAlt": "541-761-1718",
+    "contactUrl": "/contact-us",
+		"blurb": "Based in Southern Oregon <br>Regionwide Consulting",
+    "BusinessName": "True North Natural Resource Consulting, LLC",
+    "googlemap": "#",
+    "Address": {
+        "street": "459 SE Oakbriar Ave.",
+        "city": "Roseburg",
+        "state": "Oregon",
+        "zip": "97470"
+    }
+}

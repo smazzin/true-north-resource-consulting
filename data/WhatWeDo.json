@@ -1,0 +1,36 @@
+{
+"servicelist": {
+		"items": [
+			{
+				"title": "Harvest System Design & Administration",
+				"image": "/img/harvest-system-design-administration.jpg",
+				"list": [
+					"Forest Products Merchandising",
+					"Road Design & Construction",
+					"Planting & Reforestation Planning (Seed to Nursery Forest)",
+					"Timber Harvest Planning"
+				]
+			},
+			{
+				"title": "Land & Timber Management",
+				"image": "/img/land-timber-management.jpg",
+				"list": [
+					"Riparian &  Stream Management",
+					"Wildlife Management &  Habitat Restoration",
+					"Appraisals & Inventory Cruising",
+					"Data Collection & Stocking Surveys"
+				]
+			},
+			{
+				"title": "Silviculture & Reforestation",
+				"image": "/img/siviculture-reforestation.jpg",
+				"list": [
+					"Fuels Management & Fire",
+					"Herbicide Application & Prescriptions",
+					"Landowner Assistance",
+					"Mapping & GIS"
+				]
+			}
+		]
+}
+}

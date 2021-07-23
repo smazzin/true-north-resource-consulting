@@ -1,3 +1,72 @@
 {{ define "main" }}
-<h1>test</h1>
+<section>
+	<div class="top-hero" style="background-image: url(' {{ .Site.Data.home.tophero.image | relURL }} ') ;">
+		<!-- <div class="overlay-light"></div> -->
+		<div class="container-sm">
+			<div class="top-hero-content">
+				<h1>
+					{{ .Site.Data.home.tophero.title }}
+					<br>
+				</h1>
+				<p>{{ .Site.Data.home.tophero.alttitle }}</p>
+				<a class="btn btn-light-blue uppercase" href="{{ .Site.Data.contact.contactUrl }}">
+					{{ .Site.Data.home.tophero.button}}
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="trees" style="background-image: url(' {{ .Site.Data.home.OurMission.image | relURL }} ') ;"></div>
+	<div class="container">
+		<div class="grid-2">
+			<div class="text-wrapper py-2">
+				<h2 class="uppercase mb-0">{{ .Site.Data.home.OurMission.title }}</h2>
+				<p>{{ .Site.Data.home.OurMission.text }}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="bg-light">
+		<div class="container">
+			<div class="grid">
+				<h2 class="uppercase text-center py-2 mb-0">{{ .Site.Data.home.WhatWeDo.title }}</h2>
+			</div>
+		</div>
+	</div>
+	<div class="py-2">
+		<div class="container">
+			<div class="grid-3">
+				{{ range .Site.Data.WhatWeDo.servicelist.items }}
+					<div class="text-wrapper text-center">
+						<img class="img-round" src="{{.image | relURL}}" alt="{{ .title }}">
+						<h3>{{ .title }}</h3>
+						<ul class="list-unstyled">
+							{{ range .list }}
+								<li>{{ . }}</li>
+							{{ end }}
+						</ul>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="trees-hero" style="background-image: url(' {{ .Site.Data.WhoWeWorkWith.image | relURL }} ');">
+		<div class="container">
+			<div class="grid-2">
+				<div class="text-wrapper py-2">
+					<h2 class="uppercase">{{ .Site.Data.WhoWeWorkWith.title }}</h2>	
+					<ul class="list-unstyled grid">
+						{{ range .Site.Data.WhoWeWorkWith.list }}
+							<li>{{ . }}</li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 {{ end }}
