@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://truenorthconsulting-dev.netlify.app/"
 languageCode = "en-us"
 title = "True North Natural Resource Consulting"
 copyright = "Copyright &copy; {year} True North Natural Resource Consulting, LLC."
