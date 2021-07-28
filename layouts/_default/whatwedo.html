@@ -1,0 +1,33 @@
+{{ define "main" }}
+    <section>
+        <div class="trees-green" style="background-image: url(' {{ .Site.Data.WhoWeWorkWith.image | relURL }} ');">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="text-wrapper py-2">
+                        <h1 class="uppercase mb-0">{{ .Params.title }}</h1>
+                        {{ .Content  | safeHTML }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="py-2">
+            <div class="container">
+                <div class="grid-3">
+                    {{ range .Site.Data.WhatWeDo.servicelist.items }}
+                    <div class="text-wrapper text-center">
+                        <img class="img-round" src="{{.image | relURL}}" alt="{{ .title }}">
+                        <h3>{{ .title }}</h3>
+                        <ul class="list-unstyled">
+                            {{ range .list }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </section>
+{{ end }}

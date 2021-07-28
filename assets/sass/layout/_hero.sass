@@ -37,86 +37,7 @@
         opacity: .75
         mix-blend-mode: multiply
 
-
-.middle-hero
-    position: relative
-    overflow: hidden
-    display: flex
-    -ms-flex-align: center
-    align-items: center
-    padding-top: 3em
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: 50%
-    padding-top: calc(16.16667vw + 30.66667px)
-    padding-bottom: calc(15.2233vw + 28.64078px)
-    max-height: 70vh
-
-.middle-hero-content
-    position: relative
-    z-index: 3
-    text-align: center
-    @media (min-width: 900px)
-        text-align: left
-    h2
-        color: $white
-        font-weight: bolder
-        
-.page-hero
-    position: relative
-    overflow: hidden
-    display: flex
-    -ms-flex-align: center
-    align-items: center
-    padding-top: 3em
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: 50%
-    padding-top: calc(10.16667vw + 46.66667px)
-    padding-bottom: calc(10.2233vw + 28.64078px)
-    max-height: 84vh
-    @media (max-width: 900px)
-        padding-top: calc(37.16667vw + 46.66667px)
-        padding-bottom: calc(103.2233vw + 28.64078px)
-        max-height: 77vh
-
-.overlay
-    position: absolute
-    z-index: 1
-    top: 0
-    left: 0
-    height: 100%
-    width: 100%
-    background: linear-gradient(0deg, rgba(0, 44, 202, 0.7), rgba(0, 44, 202, 0.7))//rgba(#000, 0.4)
-
-.overlay-light
-    position: absolute
-    z-index: 1
-    top: 0
-    left: 0
-    height: 100%
-    width: 100%
-    background: linear-gradient(178deg, rgba(255, 255, 255, 0) 1.68%, rgba(0, 0, 0, 0.445) 98.31%)
-
-.overlay-grey
-    position: absolute
-    z-index: 1
-    top: 0
-    left: 0
-    height: 100%
-    width: 100%
-    background: linear-gradient(0deg, rgba(128, 130, 133, 0.6), rgba(128, 130, 133, 0.6))
-
-.overlay-dark
-    position: absolute
-    z-index: 1
-    top: 0
-    left: 0
-    height: 100%
-    width: 100%
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25))
-
-.trees-hero
+.trees-green
     position: relative
     overflow: hidden
     // align-items: center
@@ -143,3 +64,6 @@
     background-size: contain
     background-repeat: no-repeat
     background-position: right
+    @media (max-width: 900px)
+        mix-blend-mode: multiply
+        opacity: .1

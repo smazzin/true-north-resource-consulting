@@ -1,14 +1,22 @@
 {{ define "main" }}
-    {{ partial "hero" (dict "imageUrl" .Params.image "title" .Params.herotitle "text" .Params.herotext "buttonText" $.Site.Data.contact.buttonblurb "contactUrl" $.Site.Data.contact.contactUrl) }}
-    <section>
+<section>
+    <div class="trees-green" style="background-image: url(' {{ .Site.Data.WhoWeWorkWith.image | relURL }} ');">
         <div class="container">
-            <div class="grid grid--container">
-                <div class="row">
-                    <div class="col col--sm-9">
-                        {{ .Content  | safeHTML }}
+            <h1 class="uppercase mb-0">
+                {{ .Params.title }}
+            </h1>
+            <div class="grid-2 align-items-center">
+                <div class="text-wrapper">
+                    {{ .Content | safeHTML }}
+                </div>
+                <div class="img-wrapper mt-1 pb-2">
+                    <div class="grid-2">
+                        <img src="{{ .Params.img1 | relURL }}" alt="">
+                        <img class="mt-1" src="{{ .Params.img2 | relURL }}" alt="">
                     </div>
                 </div>
             </div>
-        </div>\
-    </section>
+        </div>
+    </div>
+</section>
 {{ end }}
