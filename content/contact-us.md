@@ -1,5 +1,7 @@
 ---
-title: "Contact Us"
+title: "Contact True North Natural Resource Consulting | Based in Southern Oregon
+Regionwide Consulting"
+description: "Contact us. True North Natural Resource Consulting is a forestry consulting firm specializing in relationships with landowners that range in size from small acreages, large industrial landowners, federal agencies, and every size between."
 date: 2021-07-23T07:19:56-07:00
 draft: false
 layout: contact
