@@ -7,8 +7,7 @@
 				"list": [
 					"Forest Products Merchandising",
 					"Road Design & Construction",
-					"Planting & Reforestation Planning (Seed to Nursery Forest)",
-					"Timber Harvest Planning"
+					"Timber Harvest Planning and Administration"
 				]
 			},
 			{
@@ -18,17 +17,19 @@
 					"Riparian &  Stream Management",
 					"Wildlife Management &  Habitat Restoration",
 					"Appraisals & Inventory Cruising",
-					"Data Collection & Stocking Surveys"
+					"Data Collection & Stocking Surveys",
+					"Mapping & GIS"
 				]
 			},
 			{
-				"title": "Silviculture & Reforestation",
+				"title": "Silviculture and Reforestation",
 				"image": "/img/siviculture-reforestation.jpg",
 				"list": [
 					"Fuels Management & Fire",
 					"Herbicide Application & Prescriptions",
-					"Landowner Assistance",
-					"Mapping & GIS"
+					"Planting & Reforestation Planning",
+					"Seed and Seedling Acquisition",
+					"Landowner Assistance"
 				]
 			}
 		]
